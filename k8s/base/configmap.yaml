@@ -8,3 +8,4 @@ data:
   PORT: "3000"
   LOG_LEVEL: "debug"
   DATABASE_URL: "postgresql://mamba:mamba123@172.17.0.1:5436/mydb?sslmode=disable"
+  
