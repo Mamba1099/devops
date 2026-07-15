@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: myapp
-          image: myapp:latest
+          image: mambak10099/devops-app:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 3000

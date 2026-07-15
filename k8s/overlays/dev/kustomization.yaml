@@ -7,10 +7,13 @@ resources:
 namespace: dev
 
 images:
-  - name: myapp
-    newName: myusername/myapp
-    newTag: dev
+  - name: mambak10099/devops-app
+    newTag: latest
 
-patchesStrategicMerge:
-  - replica-count.yaml
-  - env-dev.yaml
+patches:
+  - path: replica-count.yaml
+    target:
+      kind: Deployment
+  - path: env-dev.yaml
+    target:
+      kind: ConfigMap

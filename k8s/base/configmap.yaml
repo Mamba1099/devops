@@ -7,4 +7,4 @@ data:
   NODE_ENV: "production"
   PORT: "3000"
   LOG_LEVEL: "info"
-  DATABASE_URL: "postgresql://postgres:password@postgres-service:5432/mydb"
+  DATABASE_URL: "postgresql://mamba:mamba123@host.docker.internal:5436/mydb?sslmode=disable"
